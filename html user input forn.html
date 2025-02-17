@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+	body {
+	margin: 10%;
+    padding: 5%;
+    border: 2px solid gray;
+    border-radius: 35px;
+    background-color: lightskyblue;
+}
+</style>
+</head>
+<body>
+<h1>User Inputs </h1>
+<br>
+
+
+	<form action="user_input_data_entery.doc" id="user_info" >		
+	<label for="name">Name</label>
+	<input type="text" id="name" name="name" placeholder="Enter your Name" required>
+	<br><br>
+	<label for="email">Email</label>
+	<input type="email" id="email" name="email" placeholder="Enter your Email" required>
+	<br><br>
+	<label for="age">Age</label>
+	<input type="number" id="age" name="age"  min="5" max="80" placeholder="Enter your age "  required>
+	<br><br>
+	<label for="height">Height</label>
+	<input type="number" id="height" name="height" min="120" max="180" placeholder="Enter your Height" required>
+	<br><br>
+	<label for ="weight">Weight</label>
+	<input type="number" id="weight" name="weight" placeholder="Enter your weight in KG">
+	<br><br>
+	<label for="gender">Select Gender</label>
+	
+	<select name="gender" id="gender">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="Boy">Boy</option>
+		<option value="Girl">Girl</option>
+	</select>
+<br><br>
+
+<label for="bicycyle_type">Select the Bicycle</label>
+
+<select name="Bicycle" id="Bicycle">
+	<option value="Road Bicycle">Road Bicycle</option>
+	<option value="Hybrid Bicycle">Hybrid Bicycle</option>
+	<option value="MTB Bicycle"> Mtb Bike</option>
+	<option value="E-Bicycle">E-Bicycle</option>
+	<option value="Classic Bycle">Classic Bicycle</option>
+	<option value="City Commuter Bicycle">City Commuter Bicycle</option>
+</select>
+
+	<br><br>
+	<button type="submit" id="user_info"  onsubmit="alert ('submited ')" >Submit</button>
+	
+</form>
+	
+	
+
+</body>
+</html>
